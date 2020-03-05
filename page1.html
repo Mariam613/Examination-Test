@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://use.fontawesome.com/3ee71ef1c8.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #exam{
+            height: 630px;
+            background-color: lightgray;
+        }
+        #question,.choices{
+            margin: 50px;
+            font-size: x-large;
+        }
+        label{
+            font-size: x-large;
+        }
+        input{
+            margin: 10px;
+        }
+        /* #banner{
+            width: 1024px;
+            height: 100px;
+            background-color: black;
+        } */
+        /* #menueTop{
+            width: 1024px;
+            height: 35px;
+            background-color: ;
+        } */
+        #columnRight{
+        
+            width: 323px;
+            height: 628px;
+            /* background-color:  #007bff; */
+            border: 1px solid #007bff;
+        }
+        .container{
+    
+            display: inline-flex;
+        }
+        #content{
+            height: 505px; 
+        }
+        #footer{
+            text-align: center;
+            width: 1022px;
+            /* background-color:  #007bff; */
+            border: 1px solid #007bff;
+    background: beige;
+        }
+        .pag{
+            margin: 15px;
+            border: 1px solid #007bff;;
+            padding: 10px 18px;
+            border-radius: 7px;
+            font-size: large;
+        }
+        .pag:hover{
+            background-color: #007bff;
+            cursor: pointer;
+        }
+        button{
+            background: none;
+            border: none;
+            font-size: xx-large;
+            margin: 29px 40px 14px 55px;
+        }
+        .markQuestion{
+            background-color: lightgrey;
+            margin: 20px;
+            padding: 25px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="exam">
+            <div id="content">
+                <div id="question"></div>
+                <div class="choices">
+                    <input type="radio"name='choice1'><label class="label1"></label>
+                    <br>
+                   <input type="radio"name='choice2'> <label class="label2"></label>
+                    <br>
+                    <input type="radio"name='choice3'><label class="label3"></label>
+                    <br>
+                    <input type="radio"name='choice4'><label class="label4"></label>
+                </div>
+            </div>
+            <div id="footer">
+                <button class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button value="submit" class="pag" id="q-0">1</button>
+                <button value="submit" class="pag" id="q-1">2</button>
+                <button value="submit" class="pag" id="q-2">3</button>
+                <button value="submit" class="pag" id="q-3">4</button>
+                <button value="submit" class="pag" id="q-4">5</button>
+                <button class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                <button class="mark"><i class="fa fa-font-awesome" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div id="columnRight">
+            <div class="markQuestion">Mark Questions</div>
+        </div>
+    </div> 
+    <script src="script.js"></script>   
+</body>
+</html>
